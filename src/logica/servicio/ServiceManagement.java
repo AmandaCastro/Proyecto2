@@ -1,4 +1,3 @@
-
 package logica.servicio;
 
 import logica.structure.*;
@@ -22,12 +21,13 @@ public class ServiceManagement<T extends Comparable<T>> implements structurebeha
 			this.structure = new cola<>();
                 
                 else
-			this.structure = new cola<>();
+			this.structure = new Heap<>();
 	}
         
 
 
 	//INTERFACE METHODS
+        @Override
 	public void create(T element) {
 		structure.create(element);
 	}
@@ -39,13 +39,10 @@ public class ServiceManagement<T extends Comparable<T>> implements structurebeha
 
 	@Override
 	public void clear() {
-		// TODO Auto-generated method stub
-		
 	}
 
 	@Override
 	public boolean isEmpty() {
-		// TODO Auto-generated method stub
 		return false;
 	}
 

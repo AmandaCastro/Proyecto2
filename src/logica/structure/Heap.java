@@ -1,6 +1,8 @@
 
 package logica.structure;
 
+
+
 import java.util.Vector;
 
 public class Heap <T extends Comparable<T>> implements structurebehavior<T> {
@@ -42,7 +44,6 @@ public class Heap <T extends Comparable<T>> implements structurebehavior<T> {
 	/**
 	 * CREATE NEW NODES
 	 */
-	@Override
 	public void create(T element) {
 		int i = vector.size();
 		vector.add(element);
@@ -57,7 +58,6 @@ public class Heap <T extends Comparable<T>> implements structurebehavior<T> {
 	/**
 	 * EXTRACT FIRST NODE
 	 */
-	@Override
 	public T extract() {
 		if(isEmpty() ) {
 			return null;
@@ -75,7 +75,6 @@ public class Heap <T extends Comparable<T>> implements structurebehavior<T> {
 	/**
 	 * VERIFIES IF THE VECTOR IS EMPTY
 	 */
-	@Override
 	public boolean isEmpty() {
 		return vector.size()==0;
 	}
@@ -137,6 +136,7 @@ public class Heap <T extends Comparable<T>> implements structurebehavior<T> {
            swapHeap(i, smallestNode);
            heapSortVector(smallestNode);
        }
+       
    }
    
    /**

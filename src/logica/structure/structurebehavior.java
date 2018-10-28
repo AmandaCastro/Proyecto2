@@ -1,4 +1,3 @@
-
 package logica.structure;
 public interface structurebehavior<T> {
 	//INTERFACE METHODS

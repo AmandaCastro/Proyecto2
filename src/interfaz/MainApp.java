@@ -2,25 +2,38 @@
 package interfaz;
 
 
-import logica.enums.EnumColor;
-import logica.Patient.Patient;
+import logica.Paciente.EnumColor;
+import logica.Paciente.Patient;
 import logica.servicio.ServiceManagement;
+import logica.Paciente.enfermedades;
+import logica.structure.Heap;
+
 
 public class MainApp {
-	public static void main(String[] args) {
-		
-		
-		
-		ServiceManagement<Patient> patientManagement = new ServiceManagement<>(false);
-		
-		patientManagement.create(new Patient(EnumColor.RED,"301251248589", "Aaron", "Castro"));
-		patientManagement.create(new Patient(EnumColor.YELLOW,"301251248589", "Alfredo", "Monge"));
-		patientManagement.create(new Patient(EnumColor.GREEN,"301251248589", "Miranda", "Venegas"));
-		patientManagement.create(new Patient(EnumColor.RED,"301251248589", "Amanda", "Castro"));
-		patientManagement.create(new Patient(EnumColor.GREEN,"301251248589", "Alexander", "Venegas"));
+    public static void main(String[] args) {
+//        graficinterface interfazGrafica = new graficinterface();
+//        
+//        Heap<Patient> heapVector = new Heap<>();
+//
+//        heapVector.create(new Patient(EnumColor.RED, enfermedades.quebradura, "QAZ123456", "person1"));
+//        heapVector.create(new Patient(EnumColor.GREEN, enfermedades.Infarto, "YTV98161", "person2"));
+//        heapVector.create(new Patient(EnumColor.YELLOW, enfermedades.dolorE, "OKN216488", "person3"));
+//        heapVector.create(new Patient(EnumColor.RED, enfermedades.perdidaSangre, "UUIS19181", "person4"));
+//        heapVector.create(new Patient(EnumColor.GREEN, enfermedades.otro, "UIS1681185", "person5"));
+//
+//        System.out.println("\n\nCREATES");
+//        System.out.println(heapVector.toString());		
+//    }
+    
 
-
-		System.out.println(patientManagement.toString());
-	}
+        //DatosCliente ventana = new DatosCliente();
+        //ventana.setVisible(true);
+        ventanaInicio v1 = new ventanaInicio();
+        v1.setTitle("Configuración del usuario");  
+        v1.setVisible(true);
+    }
 }
+
+
+   
 
